@@ -1,0 +1,936 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* code starts form here */
+body{
+  
+  background: #5549496b url("https://freepngimg.com/thumb/claw_scratch/30788-6-claw-scratches-thumb.png");
+ background-repeat: no-repeat;
+ background-position: left;
+}
+.subcategory{
+  display: none;
+}
+
+#createquery{
+  color: #080808;
+  background-color: #ffffffb4;
+  display: inline-block;
+  width: 16vw;
+  font-size: 95%;
+  margin: 16px;
+  font-weight: bold;
+ position: relative;
+ right: 40%;
+ border-color: #4e4e4e4f;
+ border-radius: 24PX;
+ box-shadow: 1px 1px 3px 3px rgb(206, 205, 205);
+}
+#querys{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 4px 4px rgb(224, 216, 199);
+  background: linear-gradient(to right, rgba(211, 144, 68, 0.63),rgba(165, 209, 209, 0.397));
+}
+
+.ticket{
+  width: 100%;
+  color: #141414;
+}
+#category{
+  border-radius: 26px;
+  background-color: #ced3beaf;
+  width: 20vw;
+}
+.status{
+  color: #030303;
+}
+.leftQuert{
+  width: 50%;
+}
+.rightQuery{
+  width: 40%;
+}
+#teamList{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 26px;
+  background-color: #ced3beaf;
+  width: 20vw;
+}
+.charts{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.adminDashBoard{
+  display: flex;
+}
+.adminSideBar{
+  width: 40%;
+  height: 88vh;
+}
+.adminDetails{
+  width: 100%;
+  height: 88vh;
+  overflow: auto;
+}
+.detailsOfAdminHome{
+  width: 100%;
+  margin: auto;
+  padding: 24px;
+  overflow: auto;
+}
+.adminDetails::-webkit-scrollbar {
+  display: none;
+}
+.home{
+
+  height: 100vh;
+  background-color: #282c34af;
+ 
+}
+.logoAndLogin{
+  display: flex;
+  height: 80%;
+ 
+}
+.logo{
+  margin: auto;
+  width: 50%;
+  
+}
+.login{
+  margin: auto;
+  box-shadow: rgb(169, 245, 255) 1px 1px 2px 2px;
+  width:30vw;
+  padding: 8px;
+  height: 90%;
+  background: url('https://i.pinimg.com/originals/39/70/fd/3970fd45f8264338153834f7ff18f4f0.gif');
+background-position: bottom;
+background-size: cover;
+border-radius: 12px;
+}
+.radiobutton{
+  margin-right: 12px;
+}
+.signupButton{
+  display: flex;
+  justify-content: center
+}
+.commandBoxAndQueryDetail{
+  display: flex;
+  justify-content: center;
+}
+.managerQueryDetails{
+
+  
+  width: 60%;
+}
+.commandBox{
+  display: flex;
+  align-items: flex-end;
+    justify-content: center;
+  width: 30%;
+  height: 70vh;
+  box-shadow: rgb(160, 160, 160) 1px 1px 3px 3px;
+  background-color: #f0f0f0;
+  border-radius: 12px;
+
+}
+.commands{
+  width: 100%;
+  height: 100%;
+
+}
+.managerCommandMessages{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 12px;
+border-top-left-radius: 12px;
+border-top-right-radius: 12px;
+border-bottom-left-radius: 12px;
+  background-color: #575656;
+  width: 90%;
+  height: 10%;
+}
+.chating{
+ height:80%;
+  overflow: scroll;
+  font-size: larger;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: "IBM Plex Serif";
+}
+.chating::-webkit-scrollbar {
+  display: none;
+}
+.profilImage{
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: top;
+  
+}
+.adminHelper{
+  display: grid;
+  grid-template-columns: 1fr 1fr  1fr;
+}
+.adminManager{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+}
+.adminHome{
+  width: 70%,
+
+
+}
+.adminHomeBox{
+ background-color: #f5f4f496;
+ color: rgb(63, 61, 61);
+ border-radius: 24px;
+ font-size: 18px;
+
+}
+.adminChart{
+  background: url("https://i.pinimg.com/originals/74/c8/16/74c81634df9087d04879088aa5c2ee50.gif");
+  background-repeat: no-repeat;
+background-size: cover;
+
+}
+.adminmanagerdetails{
+  overflow: auto;
+  height: 70vh;
+  margin: 10px;
+  
+
+}
+.adminhelperdetails{
+  overflow: auto;
+  height: 70vh;
+  margin: 10px;
+
+
+}
+.admin{
+  background-color: #8f8d8d54;
+  height: 100vh;
+}
+#adminmanagerbox{
+  background-color: #f0f0f0;
+  border-radius: 16px;
+}
+#adminhelperbox{
+  background-color: #f0f0f0;
+  border-radius: 16px;
+}
+.adminChangePassword{
+width: 100vw;
+margin-top: 10%;
+}
+.adminChangePasswordInput{
+width: 30%;
+margin: auto;
+box-shadow: rgb(190, 190, 190) 1px 1px 2px 2px;
+padding: 12px;
+
+}
+.inputbox{
+  width: 100vw;
+margin-top: 10%;
+}
+.input{
+  width: 30%;
+  margin: auto;
+  box-shadow: rgb(190, 190, 190) 1px 1px 2px 2px;
+  padding: 12px;
+  background-color: #eaecec98;
+  border-radius: 12px;
+}
+.menu{
+  display: none;
+}
+.adminChartssysem{
+  width: 350px;
+}
+.profilOverFlowHihe{
+  overflow: hidden;
+}
+.profileInputForMoble{
+  display: none;
+}
+.adminlogininputfeild{
+  width: 100%;
+  margin: auto;
+}
+
+.homeTitle{
+  width: 100%;
+  
+  margin-top: 15%;
+  color: #31d1fd;
+  font-family:'Rubik 80s Fade';
+  font-size: 60px;
+  letter-spacing: 4px;
+  animation-name:titleOfApp;
+  animation-duration: 4s;
+  position: relative;
+}
+@keyframes titleOfApp{
+  0%{left:0px; top:0px;}
+  25%{left:80px; top:0px;}
+  50%  { left:80px; top:50px;}
+  75%  { left:0px; top:50px;}
+  100% { left:0px; top:0px;}
+}
+.adminSignup{
+  background-color: #f0f0f0;
+}
+.menuText{
+  font-size: 8px;
+}
+.adminhomeboxAfter450px{
+  display: none;
+}
+.userDashBoard{
+  height: 100vh;
+  background:linear-gradient(rgba(26, 25, 25, 0.589),rgba(30, 123, 126, 0.411))
+}
+.querysList{
+  height: 70vh;
+  overflow: auto;
+}
+
+.profileChooseher{
+  width: 100px;
+  font-size: 16px;
+}
+.listofquerysAfter450px{
+  display: none;
+}
+.userQuerysWidth{
+  width: 100%;
+  display: flex;
+}
+.queryCreatingLabel{
+  font-size: larger;
+  width: auto;
+  margin: 8px;
+color: #491275;
+font-weight:500;
+margin-left: 20px;
+
+ 
+}
+.error{
+  color: red;
+}
+.creatingQuery{
+  margin: auto;
+  width: 60vw;
+  height: 85vh;
+  overflow: auto;
+  border-radius: 12px;
+}
+
+.creatingQuery::-webkit-scrollbar {
+  display: none;
+}
+#backButtonInCreatingQuery{
+  margin: 8px;
+}
+.inputsForCreatingQuery{
+  border: 4px solid rgba(120, 34, 131, 0.205);
+  border-radius: 16px;
+
+}
+.attachment{
+ background-color: #383737;
+ color: hsl(192, 100%, 67%);
+ border-radius: 24px;
+}
+#querySubmitButton{
+  margin: 12px;
+}
+.detailsOfUserQuery{
+  display: flex;
+  margin: auto;
+  width: 70vw;
+  box-shadow: 1px 1px 2px 2px;
+  background-color: #8585855b;
+  padding: 12px;
+  height: 90vh;
+  overflow: auto;
+}
+.detailsOfUserQuery::-webkit-scrollbar{
+  display: none;
+}
+.attachmentPhoto{
+  width: 8vw;
+}
+.UserQueryContents{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cacdce;
+  border-radius: 12px;
+  width: 90%;
+  color: rgb(37, 37, 37);
+
+}
+.labelForDetailsOfQuery{
+  font-size:large;
+  font-weight: bold;
+  
+}
+.commandFromManagerToUser{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  background-color: #ffffffde;
+border-top-right-radius: 8px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+height: 30px;
+}
+.querDetailsOfuserSide{
+  width: 100%;
+  overflow: auto;
+
+}
+.querDetailsOfuserSide::-webkit-scrollbar{
+  display: none;
+}
+.querDetailsOfManagerSide{
+  height: 100%;
+  margin: auto;
+  width: 100%;
+ 
+ 
+}
+.dateAndTime{
+  color: #080808;
+  margin: 8px;
+}
+.helperQueryList{
+  height: 70vh;
+  overflow: auto;
+}
+.todyQuerys{
+  width: 25%;
+  box-shadow: rgba(255, 255, 255, 0.438) 2px 2px 3px 3px;
+  border-radius: 12px;
+}
+.helperAppBar{
+  background-color: #6bad1581;
+}
+#helperQuerys{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 4px 4px rgb(224, 216, 199);
+  background: linear-gradient(to right, rgba(175, 135, 180, 0.63),rgba(101, 182, 182, 0.397));
+}
+.helperChart{
+  width: 400px;
+}
+.querDetailsToHelper{
+  margin: auto;
+  width: 95%;
+  height: 70vh;
+  overflow: auto;
+}
+.querDetailsToHelper::-webkit-scrollbar{
+  display: none;
+}
+#backButton{
+  margin: 10px;
+}
+.assignToManager{
+  height: 50vh;
+  display: flex;
+}
+.assignToManagerInput{
+  padding: 8px;
+  background-color: #f7dddd67;
+  font-size: large;
+  margin: auto;
+  height: 80%;
+  width: 50%;
+  box-shadow: rgba(255, 255, 255, 0.527) 1px 1px 2px 2px;
+}
+.helperAssignInputBox{
+  border-radius: 12px;
+  margin: 8px;
+}
+.backButtonForAssignToManager{
+  margin: auto;
+}
+.managerAppBar{
+  background-color: #e6521898;
+}
+.managerPosition{
+  background: linear-gradient(to right ,rgba(192, 38, 38, 0.199),rgba(97, 219, 228, 0.219),rgba(255, 255, 0, 0.24));
+font-size: 40px;
+font-family: "Kaushan Script";
+letter-spacing: 3px;
+}
+.commandBoxAndButton{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  height:12%;
+
+}
+.managerCommandButton{
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+  border-color: #ffffff;
+  font-weight: bold;
+  font-size: large;
+  font-family:'Times New Roman', Times, serif;
+}
+.managerCommandInput{
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  outline: none ;
+  border:2px solid rgb(153, 153, 153);
+}
+@media(max-width:1100px){
+  .adminSideBar{
+    width: 100%;
+    height: fit-content;
+  }
+  .adminDashBoard{
+    display: inline;
+  }
+ 
+  .admin{
+    height: fit-content;
+    color: #c666b96e;
+  }
+  .inputfeild{
+    width: 100%;
+  }
+  .adminChart{
+    background: none;
+  }
+
+ .login{
+  width: 40vw;
+ }
+
+
+}
+
+@media(max-width:900px){
+  .appbarMenus{
+    display: none;
+  }
+  .menu{
+    display: inline;
+  }
+  .input{
+    width: 50%;
+  }
+  .adminChartssysem{
+    width: 300px;
+  }
+  .querysList{
+    height: 65vh;
+    overflow: auto;
+  }
+  .helperChart{
+    width: 350px;
+  }
+  .commandBox{
+    width: 35%;
+    height: 65vh;
+   }
+.managerAssignAsCompleted{
+  font-size: 12px;
+}
+}
+@media(max-width:800px){
+  .UserQueryContents{
+font-size: 2vw;
+  
+  }
+  .managerAssignAsCompleted{
+    font-size: 1.5vw;
+  }
+}
+@media(max-width:760px){
+  
+  .logoAndLogin{
+    display: inline;
+height: 130%;
+    
+  }
+  .home{
+    height:fit-content
+
+  }
+  .logo{
+    height: 40%;
+  }
+  .login{
+    height: 60%;
+    width: 70vw;
+   
+  }
+  
+  .aboutTickeySystem{
+    background-color:  #e0dedec5;
+  }
+  .homeTitle{
+  height: 50vh;
+  font-size: 40px;
+  margin-top: 0%;
+ padding-top: 24px;
+  
+  }
+  .ticket{
+    font-size: medium;
+  }
+  .userQueryTitle{
+    display: block;
+  }
+  #category{
+    width: 30vw;
+  }
+
+.dateAndTime{
+  font-size: medium;
+}
+#createquery{
+  width:15vw;
+  font-size: 2vw;
+}
+.creatingQuery{
+
+  width: 80vw;
+
+}
+.assignTomanagerButton{
+  width: 5vw;
+ }
+}
+@media(max-width:650px){
+  .labelForDetailsOfQuery{
+    font-size: 2vw;
+  }
+  .helperChart{
+    width: 250px;
+  }
+  .todyQuerys{
+    width: 20%;
+  }
+  .todayQuerysTitle{
+    font-size: medium;
+  }
+  #createquery{
+    width: 18vw;
+   }
+   .commandBoxAndButton{
+    width: 95%;
+    height:12%;
+  }
+  .commandBox{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    width: 80vw;
+  }
+  .commandBoxAndQueryDetail{
+    display: inline;
+  }
+  .managerQueryDetails{
+    width: 100%;
+  }
+}
+
+
+
+@media(max-width:500px){
+  #createquery{
+    width:18vw;
+    font-size: 3vw;
+  }
+  .labelForDetailsOfQuery{
+    font-size: 3vw;
+
+  }
+  .UserQueryContents{
+    font-size: 3vw;
+  }
+  .detailsOfUserQuery{
+    display: inline;
+   box-shadow: none;
+   background-color: rgba(102, 51, 153, 0);
+   width: 100%;
+
+  }
+  #querys{
+    margin: 16px;
+  }
+  #helperQuerys{
+    margin: 16px;
+  }
+  @keyframes titleOfApp{
+    0%{left:0px; top:0px;}
+    25%{left:40px; top:0px;}
+    50%  { left:40px; top:50px;}
+    75%  { left:0px; top:50px;}
+    100% { left:0px; top:0px;}
+  }
+  #createquery{
+    width: 20vw;
+   }
+   .managerAssignAsCompleted{
+   
+    font-size:2vw;
+  }
+}
+
+@media(max-width:450px){
+ 
+.avatar{
+  display: none;
+}
+.profileInputForMoble{
+  width:50px;
+  font-size:12px;
+  display: inline;
+}
+.name{
+  font-size: 4vw;
+}
+.homeTitle{
+
+  font-size: 35px;
+  
+  }
+.input{
+  width: 100%;
+}
+
+.login{
+  width: 80vw;
+}
+.adminhomeboxAfter450px{
+  display: inline;
+}
+.adminhomeboxBefore450px{
+  display: none;
+}
+#category{
+  width: 40vw;
+}
+.categorysName{
+  font-size: small;
+}
+.dateAndTime{
+  font-size: small;
+}
+.status{
+  font-size: medium;
+}
+.listofquerysBefore450px{
+  display: none;
+}
+.listofquerysAfter450px{
+  display: flex;
+  flex-wrap: wrap;
+}
+#querys{
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+}
+#helperQuerys{
+  display: flex;
+  width: 95vw;
+  justify-content: center;
+}
+.ticket{
+width: 100%;
+}
+#category{
+  width: 50vw;
+  margin: auto;
+}
+.rightQuery{
+  width: 100%;
+}
+
+.todyQuerys{
+  width: 25%;
+}
+
+#createquery{
+  margin-left: 65px;
+  width: 28%;
+ }
+ .assignToManagerInput{
+  width: 80%;
+ 
+}
+}
+
+@media(max-width:400px){
+#createquery{
+ 
+  width: 30%;
+}
+.creatingQuery{
+  width: 90vw;
+
+}
+.queryCreatingLabel{
+  font-size: medium;
+ 
+}
+@keyframes titleOfApp{
+  0%{left:0px; top:0px;}
+  25%{left:30px; top:0px;}
+  50%  { left:30px; top:50px;}
+  75%  { left:0px; top:50px;}
+  100% { left:0px; top:0px;}
+}
+
+.todyQuerys{
+  margin: 12px;
+
+}
+.helperLogout{
+  font-size: 4vw;
+}
+.managerLogout{
+  font-size: 4vw;
+  margin-left: 8px;
+}
+.managerAssignAsCompleted{
+   
+  font-size:3vw;
+}
+}
+
+@media(max-width:350px){
+ .logo{
+  height: 30%;
+ }
+  .login{
+    width: 95%;
+    height: 60%;
+   
+  }
+  .labelForDetailsOfQuery{
+    font-size: 4vw;
+
+  }
+  .UserQueryContents{
+    font-size: 4vw;
+  }
+  .name{
+    font-size: 3.6vw;
+    font-weight: bolder;
+  }
+  .homeTitle{
+    font-size: 28px;
+    
+    }
+    .attachment{
+     width: 80%;
+     }
+ .assignTomanagerButton{
+  width: 5vw;
+ }
+ .assignToManagerInput{
+ background-color: #c7474767;
+ color: rgb(255, 255, 255);
+ font-size: large;
+ width: 90%;
+ border-radius: 8px;
+ 
+}
+.todyQuerys{
+  width: 40%;
+}
+  }
+
+@media(max-width:300px){
+ 
+  .adminChartssysem{
+    width: 90%;
+  }
+  .login{
+    height: 70%;
+  }
+  .creatingQuery{
+
+    width: 95vw;
+  
+  }
+  @keyframes titleOfApp{
+    0%{left:0px; top:0px;}
+    25%{left:25px; top:0px;}
+    50%  { left:25px; top:50px;}
+    75%  { left:0px; top:50px;}
+    100% { left:0px; top:0px;}
+  }
+  #createquery{
+ 
+    width: 35%;
+  }
+  .helperAssignInputBox{
+   width: 80vw;
+  }
+  }
+
