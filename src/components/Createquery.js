@@ -88,7 +88,7 @@ else if(h < 12){
   time =  h  + ':' + m  + ':'+s +' ' + 'AM'
 }
 else{
-   time =  h -12 + ':' + m  + ':'+s +' '+ 'PM'
+   time =  h  + ':' + m  + ':'+s +' '+ 'PM'
 }
 
 if(showImage){value.attachments= createObjectURL(showImage) }
