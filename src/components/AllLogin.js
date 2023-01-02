@@ -145,7 +145,7 @@ onBlur={handleBlur}
 id='manager' name='role' type='radio' />
 <label className='radiobutton' htmlFor='manager'>Manager</label>
 
-</div>
+</div className="radioButtonError">
 {touched.role && errors.role && radioButton === '' ? errors.role : null}
 <div>
 <button type="submit" className="btn btn-info">Login</button>
