@@ -87,7 +87,7 @@ if(h === 0){
 else if(h < 12){
   time =  h  + ':' + m  + ':'+s +' ' + 'AM'
 }
-else if(h = 12){
+else if(h === 12){
   time =  h  + ':' + m  + ':'+s +' ' + 'AM'
 }
 else{
