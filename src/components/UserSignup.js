@@ -64,8 +64,10 @@ var  time = ''
 if(h === 0){
  time =  12 + ':' + m  + ':'+s +' ' + 'AM'
 }
-else if(h < 13){
+else if(h < 12){
   time =  h  + ':' + m  + ':'+s +' ' + 'AM'
+}else if(h === 12){
+  time =  h  + ':' + m  + ':'+s +' ' + 'PM'
 }
 else{
    time =  h -12 + ':' + m  + ':'+s +' '+ 'PM'
