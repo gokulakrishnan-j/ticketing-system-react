@@ -88,7 +88,7 @@ else if(h < 12){
   time =  h  + ':' + m  + ':'+s +' ' + 'AM'
 }
 else if(h === 12){
-  time =  h  + ':' + m  + ':'+s +' ' + 'AM'
+  time =  h  + ':' + m  + ':'+s +' ' + 'PM'
 }
 else{
    time =  h -12  + ':' + m  + ':'+s +' '+ 'PM'
