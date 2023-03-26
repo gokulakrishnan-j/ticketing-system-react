@@ -32,7 +32,7 @@ const [showpassword,setShowpassword] = useState(false)
 
     const {handleSubmit,values,handleBlur,handleChange,touched,errors}=useFormik({
       initialValues : {
-          adminname: 'zenclass1234@gmail.com',
+          adminname: 'admin@gmail.com',
           password : '',
           createdDate:'',
           createdTime: '',
