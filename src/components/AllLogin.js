@@ -16,7 +16,7 @@ import '../App.css'
 const formValidation = yup.object({
     loginName: yup
     .string()
-    .required('enter a admin name'),
+    .required('enter a username (Email)'),
     password:yup
     .string()
     .min(8,"your password must be at least 8 characters")
