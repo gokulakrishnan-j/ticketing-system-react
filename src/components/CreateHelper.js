@@ -66,7 +66,7 @@ function CreateHelper() {
           <div>{n.name}</div>
         <div>Created Date<div>{n.createdDate}</div></div>
         <div>Total completion <div>{helperQuerCompleted.filter((s)=>s.assigedhelpername === n.helpername).length}</div></div>
-        <div><ModeEditOutlinedIcon fontSize='small' onClick={()=>navigate(`/admin/${name}/${home}/${n.helpername}/changehelpername`)}/></div>
+        <div><ModeEditOutlinedIcon sx={{cursor:"pointer"}} fontSize='small' onClick={()=>navigate(`/admin/${name}/${home}/${n.helpername}/changehelpername`)}/></div>
         </div>
         
         
