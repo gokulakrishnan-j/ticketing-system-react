@@ -62,6 +62,7 @@ body{
  border-color: #4e4e4e4f;
  border-radius: 24PX;
  box-shadow: 1px 1px 3px 3px rgb(206, 205, 205);
+ cursor: pointer
 }
 #querys{
   display: flex;
