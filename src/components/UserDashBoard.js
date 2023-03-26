@@ -139,7 +139,7 @@ function Token ({token}){
       <div>
       <Avatar
         alt="Remy Sharp"
-        src={profile ? profile.profileimage : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}
+        src={profile ? profile.profileimage :null}
         sx={{ width: 50, height: 50 ,}}
         onClick={handleOpen}
       ></Avatar>
@@ -180,7 +180,7 @@ function Token ({token}){
         <Box sx={style}>
           <Typography className='profilOverFlowHih' id="modal-modal-title" variant="h6" component="h2">
             <input className='profileChooseher' type="file" onChange={(e)=>handleProfile(e.target.files[0])}/>
-            <img className='profilImage' src={profile ? profile.profileimage : "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"}  alt="profil" />
+            <img className='profilImage' src={profile ? profile.profileimage : null}  alt="profil" />
             <DeleteForeverIcon onClick={()=>handleRemoveProfile()}/>
           </Typography>
         </Box>
