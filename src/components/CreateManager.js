@@ -60,7 +60,7 @@ export default function CreateManager() {
         <div>Created Date<div>{n.createdDate}</div></div>
         <div>Role<div>{n.position}</div></div>
         <div>Total completion <div>{managerQuerCompleted.filter((s)=>s.completedmanagername === n.managername).length}</div></div>
-        <div><ModeEditOutlinedIcon fontSize='small' onClick={()=>navigate(`/admin/${name}/${home}/${n.managername}/changemanagername`)}/></div>
+        <div><ModeEditOutlinedIcon sx={{cursor:"pointer"}} fontSize='small' onClick={()=>navigate(`/admin/${name}/${home}/${n.managername}/changemanagername`)}/></div>
         </div>
         </div>
       ))}
