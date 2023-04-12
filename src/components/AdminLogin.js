@@ -130,6 +130,11 @@ onBlur={handleBlur}
     </Stack>
 </div>
 
+<div className='loginDetails'>
+  <h5>Admin name : admin@gmail.com</h5>
+  <h5>Password : welcome4321</h5>
+</div>
+
     </div>
   )
 }
