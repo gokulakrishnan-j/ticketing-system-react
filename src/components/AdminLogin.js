@@ -11,6 +11,7 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { InputAdornment } from '@mui/material';
 import '../App.css'
+import EmailIcon from '@mui/icons-material/Email';
 
 
 const formValidation = yup.object({
@@ -82,6 +83,13 @@ className='adminlogininputfeild'
  
   label = 'Admin@name'
   helperText={touched.adminname && errors.adminname ? errors.adminname : null}
+ InputProps={{
+    endAdornment: (
+      <InputAdornment position="start">
+       {<EmailIcon />}
+      </InputAdornment>
+     )
+    }}
 />
 </div>
 <div>
