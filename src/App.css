@@ -549,6 +549,15 @@ letter-spacing: 3px;
 .listofquerysBefore450px{
   cursor: pointer
 }
+.loginDetails{
+  background-color: #030303a8;
+  color: white;
+  border-radius: 8px;
+  padding: 8px;
+  width: fit-content;
+  margin: auto;
+  text-align: left;
+}
 @media(max-width:1100px){
   .adminSideBar{
     width: 100%;
