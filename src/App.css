@@ -637,6 +637,8 @@ height: 130%;
     height: 40%;
   }
   .login{
+     position: relative;
+    bottom: 20px;
     height: 60%;
     width: 70vw;
    
