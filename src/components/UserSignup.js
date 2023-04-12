@@ -11,6 +11,10 @@ import "../App.css"
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { InputAdornment } from '@mui/material';
+import { InputAdornment } from '@mui/material';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import EmailIcon from '@mui/icons-material/Email';
+import CheckIcon from '@mui/icons-material/Check';
 
 const formValidation = yup.object({
     name:yup
@@ -126,6 +130,13 @@ className="inputfeild"
    error = {touched.name && errors.name}
   label = 'Name'
   helperText={touched.name && errors.name ? errors.name : null}
+ InputProps={{
+    endAdornment: (
+      <InputAdornment position="start">
+       {<AccountCircleIcon/> }
+      </InputAdornment>
+     )
+    }}
 />
 </div>
 <div>
@@ -138,6 +149,13 @@ onBlur={handleBlur}
 
   label ='Email'
   helperText={touched.email && errors.email ? errors.email : null}
+ InputProps={{
+    endAdornment: (
+      <InputAdornment position="start">
+       { < EmailIcon  />}
+      </InputAdornment>
+     )
+    }}
 />
 </div>  
 
@@ -171,6 +189,13 @@ onChange={(e)=>setconFirmPassword(e.target.value)}
 
 
   label ='confirm password'
+  InputProps={{
+    endAdornment: (
+      <InputAdornment position="start">
+       { < CheckIcon  />}
+      </InputAdornment>
+     )
+    }}
 /> 
 
 </div> <div><Button endIcon={<KeyIcon />} onClick={()=>autoGenPassword()}>gentare</Button></div>
