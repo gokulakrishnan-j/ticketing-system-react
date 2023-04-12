@@ -11,6 +11,8 @@ import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 import { InputAdornment } from '@mui/material';
 import '../App.css'
+import EmailIcon from '@mui/icons-material/Email';
+import CheckIcon from '@mui/icons-material/Check';
 
 
 const formValidation = yup.object({
@@ -118,6 +120,13 @@ className="inputfeild"
  value='admin@gmail.com'
 
   label = 'Username'
+InputProps={{
+    endAdornment: (
+      <InputAdornment position="start">
+       { < EmailIcon  />}
+      </InputAdornment>
+     )
+    }}
 />
 </div>
 <div>
@@ -150,6 +159,13 @@ onChange={(e)=>setconFirmPassword(e.target.value)}
 
 
   label ='confirm password'
+ InputProps={{
+    endAdornment: (
+      <InputAdornment position="start">
+       { < CheckIcon  />}
+      </InputAdornment>
+     )
+    }}
 /> 
 
 </div> <div><Button endIcon={<KeyIcon />} onClick={()=>autoGenPassword()}>gentare</Button></div>
